@@ -12,9 +12,10 @@
 		/>
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<!-- <script src="js/main.js" defer></script> -->
 	</head>
 
-	<body>
+	<body class="blood">
 		<div class="container">
 			<header class="header">
 				<a href="/" class="header__logo-link">
@@ -55,9 +56,35 @@
 					</p>
 				</div>
 				<!-- /.hero__date -->
+				<div class="hero-buttons">
+					<button class="button hero-buttons__trailer hero-battons_active">
+						<img
+							width="15"
+							src="img/play-icon.svg"
+							alt="trailer-icon"
+							class="hero-buttons__icon"
+						/>
+						<span class="hero-buttons__text hero-battons_active"
+							>смотреть трейлер</span
+						>
+					</button>
+					<button class="button hero-buttons__ticket">
+						<a href="tickets.html">
+							<img
+								width="15"
+								src="img/tickets-icon.svg"
+								alt="tickets-icon"
+								class="hero-buttons__icon"
+							/>
+							<span class="hero-buttons__text">билеты на премьеру</span>
+						</a>
+					</button>
+				</div>
+				<!-- /.hero-buttons -->
 			</div>
 			<!-- /.hero -->
 		</div>
 		<!-- /.container -->
+		<img src="img/venom-pic.png" alt="venom-picture" class="venom-pic" />
 	</body>
 </html>

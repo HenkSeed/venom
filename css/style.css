@@ -52,3 +52,41 @@ body {
 	color: rgba(255, 255, 255, 0.8);
 	margin-top: 40px;
 }
+.hero-buttons {
+	margin-top: 70px;
+}
+.hero-buttons__ticket {
+	background-color: rgba(255, 255, 255, 0);
+}
+.button {
+	font-size: 14px;
+	line-height: 16px;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.hero-buttons__icon,
+.hero-buttons__text {
+	display: inline-block;
+	vertical-align: middle;
+	color: #ffffff;
+}
+.hero-battons_active {
+	background-color: rgba(255, 255, 255, 1);
+	color: #8d0019;
+}
+.hero-buttons__text {
+	margin-left: 10px;
+}
+
+.venom-pic {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.blood {
+	background: url('../img/blood.png') no-repeat top right,
+		#14131a url('../img/background.jpg') no-repeat center center;
+}
