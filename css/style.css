@@ -88,5 +88,89 @@ body {
 }
 .blood {
 	background: url('../img/blood.png') no-repeat top right,
-		#14131a url('../img/background.jpg') no-repeat center center;
+		#1f1c20 url('../img/background.jpg') no-repeat center center / cover;
+}
+.no-blood {
+	background: #1f1c20 url('../img/background.jpg') no-repeat center center /
+		cover;
+}
+
+.content {
+	display: flex;
+}
+.col {
+	flex-basis: 50%;
+}
+.col-actors__title {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 20px;
+}
+.col-actors__text {
+	font-size: 16px;
+	line-height: 140%;
+	/* or 22px */
+	color: rgba(255, 255, 255, 0.8);
+	max-width: 423px;
+	margin-bottom: 30px;
+}
+.col-actors__subtitle {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 140%;
+	/* or 22px */
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 15px;
+}
+.col-actors__list,
+.col-producer__list {
+	list-style-type: none;
+	padding: 0;
+	line-height: 1.5;
+}
+
+.col-actors__list {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 20px;
+	-moz-column-gap: 20px;
+	column-gap: 20px;
+	max-width: 350px;
+}
+.trailer {
+	width: 356px;
+	height: 205px;
+	background: url('../img/trailer.jpg') no-repeat center / contain;
+	border-radius: 5px;
+	display: flex; /*      */ /*                                                         */
+	align-items: center; /**/ /* выравнивает содержимое (кнопку play) по центру картинки */
+	justify-content: center; /*                                                         */
+	margin-top: 33px;
+}
+.trailer__button {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%; /* */ /*                 */
+	padding: 15px 30px; /* */ /* Овальная кнопка */
+	display: flex; /*      */ /*                 */
+	justify-content: center; /*                 */
+}
+
+.col-producer {
+	display: flex;
+}
+.col-producer__poster {
+	border-radius: 5px;
+	margin-right: 30px;
+}
+.col-producer__subtitle {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.col-producer__list {
+	margin-top: 10px;
+	margin-bottom: 25px;
 }
