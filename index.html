@@ -28,6 +28,14 @@
 					/>
 				</a>
 				<nav class="nav">
+					<button class="nav-burger">
+						<span class="nav-burger__text">Меню</span>
+						<img
+							src="img/burger-menu__icon.svg"
+							alt="Burger icon"
+							class="nav-burger__icon"
+						/>
+					</button>
 					<ul class="nav__menu">
 						<li class="nav__item">
 							<a href="about.html" class="nav__link nav__link_active"
@@ -56,31 +64,39 @@
 					</p>
 				</div>
 				<!-- /.hero__date -->
-				<div class="hero-buttons">
-					<button class="button hero-buttons__trailer hero-battons_active">
-						<img
-							width="15"
-							src="img/play-icon.svg"
-							alt="trailer-icon"
-							class="hero-buttons__icon"
-						/>
-						<span class="hero-buttons__text hero-battons_active"
-							>смотреть трейлер</span
+				<div class="button-container">
+					<div class="hero-buttons">
+						<button
+							class="
+								button
+								hero-buttons__item hero-buttons__trailer
+								hero-battons_active
+							"
 						>
-					</button>
-					<button class="button hero-buttons__ticket">
-						<a href="tickets.html">
 							<img
 								width="15"
-								src="img/tickets-icon.svg"
-								alt="tickets-icon"
+								src="img/play-icon.svg"
+								alt="trailer-icon"
 								class="hero-buttons__icon"
 							/>
-							<span class="hero-buttons__text">билеты на премьеру</span>
-						</a>
-					</button>
+							<span class="hero-buttons__text hero-battons_active"
+								>смотреть трейлер</span
+							>
+						</button>
+						<button class="button hero-buttons__item hero-buttons__ticket">
+							<a href="tickets.html">
+								<img
+									width="15"
+									src="img/tickets-icon.svg"
+									alt="tickets-icon"
+									class="hero-buttons__icon"
+								/>
+								<span class="hero-buttons__text">билеты на премьеру</span>
+							</a>
+						</button>
+					</div>
+					<!-- /.hero-buttons -->
 				</div>
-				<!-- /.hero-buttons -->
 			</div>
 			<!-- /.hero -->
 		</div>

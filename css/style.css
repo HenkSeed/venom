@@ -3,9 +3,21 @@ body {
 	color: #ffffff;
 	font-family: 'Roboto', sans-serif;
 }
+img {
+	/* max-width: 100%; */
+}
 .container {
 	max-width: 1140px;
+	width: 90%; /* При уменьшении ширины экрана это устраняет =прилипание= контента 
+	к левому краю экрана */
 	margin: auto;
+}
+.venom-pic {
+	position: absolute;
+	top: 0;
+	right: 0;
+	max-width: 728px;
+	width: 45%;
 }
 .header {
 	display: flex;
@@ -17,10 +29,11 @@ body {
 	display: inline-block;
 	margin-right: 50px;
 }
-/* .nav {
-	margin: 0;
-	padding: 0;
-} */
+.nav {
+	display: flex;
+	/* margin: 0;
+	padding: 0; */
+}
 .nav__menu {
 	margin: 0;
 	/* padding: 0; */
@@ -41,19 +54,24 @@ body {
 	font-size: 24px;
 	line-height: 28px;
 	color: rgba(255, 255, 255, 0.8);
-	margin-bottom: 38px;
+	margin-bottom: 2%;
+	/* margin-bottom: 38px; */
+}
+.hero__image {
+	width: 80%;
 }
 .hero__description {
 	max-width: 423px;
 	font-size: 16px;
 	line-height: 140%;
 	/* or 22px */
-
 	color: rgba(255, 255, 255, 0.8);
-	margin-top: 40px;
+	margin-top: 3%;
+	/* margin-top: 40px; */
 }
 .hero-buttons {
-	margin-top: 70px;
+	/* margin-top: 70px; */
+	margin-top: 5%;
 }
 .hero-buttons__ticket {
 	background-color: rgba(255, 255, 255, 0);
@@ -81,14 +99,9 @@ body {
 	margin-left: 10px;
 }
 
-.venom-pic {
-	position: absolute;
-	top: 0;
-	right: 0;
-}
 .blood {
-	background: url('../img/blood.png') no-repeat top right,
-		#1f1c20 url('../img/background.jpg') no-repeat center center / cover;
+	background: url('../img/blood.png') no-repeat top right / 70%,
+		url('../img/background.jpg') no-repeat center center / cover, #1f1c20;
 }
 .no-blood {
 	background: #1f1c20 url('../img/background.jpg') no-repeat center center /
@@ -165,6 +178,7 @@ body {
 .col-producer__poster {
 	border-radius: 5px;
 	margin-right: 30px;
+	margin-bottom: 5%;
 }
 .col-producer__subtitle {
 	margin-top: 0;
@@ -173,4 +187,85 @@ body {
 .col-producer__list {
 	margin-top: 10px;
 	margin-bottom: 25px;
+}
+.nav-burger {
+	display: flex;
+	display: none;
+	background-color: #14131a;
+	padding: 0;
+	border: none;
+	align-items: center;
+	cursor: pointer;
+}
+.nav-burger__icon {
+	margin-left: 11px;
+}
+.nav-burger__text {
+	color: #fff;
+}
+
+@media (max-width: 1024px) {
+	.hero {
+		margin-top: 7%;
+	}
+	.header {
+		margin-bottom: 4%;
+	}
+	.content {
+		flex-direction: column;
+		margin-bottom: 5%;
+	}
+	.col {
+		margin-bottom: 5%;
+	}
+	.col-producer {
+		flex-direction: column;
+	}
+	.col-producer__poster {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.blood {
+		background: #14131a;
+	}
+	.venom-pic {
+		top: 10%;
+		width: 40%;
+	}
+}
+
+@media (max-width: 590px) {
+	.header {
+		/* width: 95%; */
+		justify-content: space-between;
+	}
+	.nav__menu {
+		display: none;
+	}
+	.nav-burger {
+		display: flex;
+		justify-self: right;
+		/* display: none;
+	background-color: #14131a;
+	padding: 0;
+	border: none;
+	align-items: center; */
+	}
+	.hero-buttons__item {
+		align-self: center;
+	}
+	/* .venom-pic {
+		top: 10%;
+	} */
+	.hero {
+		text-align: center;
+	}
+	.hero-buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
